@@ -36,7 +36,7 @@ class HandTracker():
                 if draw:
                     cv2.circle(img, (cx, cy), 5, (255,0,255), cv2.FILLED)
         return lmList
-    
+
     def getUpFingers(self, img):
         pos = self.getPostion(img, draw=False)
         self.upfingers = []
